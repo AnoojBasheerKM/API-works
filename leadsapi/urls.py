@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('books/',views.BookCreateListView.as_view()),
     path('books/<int:pk>/',views.BookRetrieveUpdateDestroyView.as_view()),
+    path('leads/',views.LeadistCreateView.as_view()),
 ]

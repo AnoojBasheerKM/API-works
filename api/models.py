@@ -27,6 +27,8 @@ class Lead(models.Model):
     status=models.CharField(max_length=100,choices=STATUS_OPTONS,default="open")
 
     remarks=models.CharField(max_length=200,null=True)
+    
+    created_date = models.DateTimeField(auto_now_add=True,null=True)
 
     def __str__(self):
 
