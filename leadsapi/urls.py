@@ -23,4 +23,7 @@ urlpatterns = [
     path('books/',views.BookCreateListView.as_view()),
     path('books/<int:pk>/',views.BookRetrieveUpdateDestroyView.as_view()),
     path('leads/',views.LeadistCreateView.as_view()),
+    path('leads/<int:pk>/',views.LeadCreateUpdateRetrieveDeleteView.as_view()),
+    path('lead/summary/',views.LeadSummaryView.as_view()),
+    
 ]
